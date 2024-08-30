@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    background-image: linear-gradient(rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.9)), url('cat.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: blue;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#cat-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: blue;
+    font-size: 5rem;
+    text-align: center;
+    z-index: -1;
+    opacity: 0.2; /* Opacità bassa per non sovrastare troppo i gatti */
+}
+
+.cat {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('cat.png');
+    background-size: cover;
+}
